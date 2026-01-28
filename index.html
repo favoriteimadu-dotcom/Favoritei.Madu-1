@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        * {
+    /* Remove o destaque azul ao tocar em links e botões no mobile */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove a borda de foco (outline) que aparece em alguns navegadores */
+a:focus, button:focus, .pill-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+        .pill-button:active {
+    transform: scale(0.96);
+    transition: transform 0.1s;
+}
         :root {
             --shopee-orange: #EE4D2D;
             --shopee-orange-light: #ff7e5f;
